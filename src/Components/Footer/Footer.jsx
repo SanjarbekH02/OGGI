@@ -5,6 +5,7 @@ import youtube from "../../Assets/img/youtube.svg"
 import instagram from "../../Assets/img/instagram.svg"
 import twitter from "../../Assets/img/twitter.svg"
 import lindkolin from "../../Assets/img/in.svg"
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -14,19 +15,19 @@ const Footer = () => {
                 <div className="nav">
                     <ul className="nav__list">
                         <li className="nav__list__item">
-                            <a href="" className="nav__list__item__link">Home</a>
+                            <Link to="/" className="nav__list__item__link">Home</Link>
                         </li>
                         <li className="nav__list__item">
-                            <a href="" className="nav__list__item__link">Shop</a>
+                            <Link to="/shop" className="nav__list__item__link">Shop</Link>
                         </li>
                         <li className="nav__list__item">
-                            <a href="" className="nav__list__item__link">Blog</a>
+                            <Link to="/blog" className="nav__list__item__link">Blog</Link>
                         </li>
                         <li className="nav__list__item">
-                            <a href="" className="nav__list__item__link">Portifilo</a>
+                            <Link to="/portifilo" className="nav__list__item__link">Portifilo</Link>
                         </li>
                         <li className="nav__list__item">
-                            <a href="" className="nav__list__item__link">Cotacts</a>
+                            <Link to="/contacts" className="nav__list__item__link">Cotacts</Link>
                         </li>
                     </ul>
                     <a href="#">
