@@ -1,0 +1,54 @@
+.cart{
+    height: 250px;
+    background-color: #f3d8e6;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    &__title{
+        font-size: 70px;
+        color: rgb(23, 23, 23);
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        &__item{
+            margin: 0 10px;
+            &__link{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
+}
+
+.messages{
+    width: 90%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #bfd8f0;
+    padding: 10px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    &>img{
+        width: 27px;
+        height: 27px;
+    }
+
+    &__text{
+        padding:15px 10px;
+        font-size: 15px;
+    }
+}
+
+.button{
+    border: 2px solid black;
+    padding: 10px 20px;
+    background-color: inherit;
+    margin-left: 5%;
+}

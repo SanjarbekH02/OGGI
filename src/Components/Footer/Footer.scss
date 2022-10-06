@@ -1,0 +1,124 @@
+.footer{
+    background-color: #150C11;
+    padding: 20px;
+    margin-top: 30px;
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        &__list{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            
+            &__item{
+                margin-right: 10px;
+                padding: 5px 0;
+                &__link{
+                    text-decoration: none;
+                    color: white;
+                }
+                &:hover{
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+
+        &__logo{
+            width: 100px;
+            height: 50px;
+            margin-right: 70px;
+        }
+
+        &__blogs{
+            display: flex;
+            align-items: center;
+            &__span{
+                color: white;
+            }
+            &__link{
+                margin-left: 10px;
+                &>img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    &__title{
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__description{
+        width: 450px;
+        text-align: center;
+        color: rgb(82, 81, 81);
+        margin: auto;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        &__input{
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid rgb(91, 91, 85);
+            background-color: inherit;
+            outline: none;
+            color: white;
+            text-align: center;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        &__button{
+            background-color: inherit;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .footer{
+        background-color: #150C11;
+        padding: 10px;
+        .nav{
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+    
+            &__list{
+                justify-content: center;
+                
+            }
+    
+            &__logo{
+                width: 100px;
+                height: 50px;
+                margin: 20px 0;
+            }
+    
+            &__blogs{
+                justify-content: center;
+                &__span{
+                    display: none;
+                }
+            }
+        }
+    
+    
+        &__description{
+            width: 250px;
+        }
+    }
+}
